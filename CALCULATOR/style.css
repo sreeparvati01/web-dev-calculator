@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #666;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+
+
+
+
+
+
+
+
+<!-- DOM Manipulation Demo -->
+  <div class="card demo">
+    <h2>DOM Manipulation Demo</h2>
+
+    <p id="original">
+      Original HTML: <strong>Bold Text</strong> with spaces
+    </p>
+
+    <p id="innerHTML"></p>
+    <p id="innerText"></p>
+    <p id="textContent"></p>
+
+    <p id="keyPress">You pressed: None</p>
+  </div>
